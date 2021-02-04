@@ -23,7 +23,7 @@ Please reference [this](https://reqres.in/) API documentation when completing th
 
 # Requirements
 
-First use `useEffect` hook to fetch list of users and display `usersToDisplay` in a form of table
+First use `useEffect` hook to fetch list of users and display `usersToDisplay` state in a form of table. To add some design, you can free to use any of css framework you choose.
 
 ### Step 1: GET
 
