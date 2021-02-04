@@ -17,7 +17,15 @@ To help you understand wether or not you API requests are failing or successful,
 
 ### API Documentation
 
-The Base API url is: `https://reqres.in/api/`
+The Base API url is located at `./src/helper/axios.jsx`
+```
+// Default base url
+import axios from 'axios'
+
+export default axios.create({
+  baseURL: 'https://reqres.in/api/'
+})
+```
 
 Please reference [this](https://reqres.in/) API documentation when completing the project steps.
 
