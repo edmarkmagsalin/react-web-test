@@ -21,7 +21,7 @@ The Base API url is: `https://reqres.in/api/`
 
 Please reference [this](https://reqres.in/) API documentation when completing the project steps.
 
-# Steps
+# Requirements
 
 First use `useEffect` hook to fetch list of users and display `usersToDisplay` in a form of table
 
