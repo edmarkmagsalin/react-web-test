@@ -70,6 +70,6 @@ In this step, we'll make use of `axios` to delete a user. When deleting data on 
 
 ### Bonus
 
-If there is extra time, try to complete with `registration` and `login` feature.
+If there is extra time, try to complete your application with `registration` and `login`.
 
 # Good Luck!
