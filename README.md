@@ -35,8 +35,6 @@ In this first step, we'll make use of `axios` to get the `Get All Users` button 
 * Locate the pre-made `getUsers()` method.
 * Using `axios` and the provided API documentation make a `GET` request to receive all the users.
 	* If the request is successful, use `setUsers()` state to update the value of `usersToDisplay` and use `toast.success` to fetch success message.
-	| Hint: Inspect the returned data object.|
-| --- |
 	* If the request is unsuccessful, use `toast.error`	.
 	
 ### Step 2: UPDATE
