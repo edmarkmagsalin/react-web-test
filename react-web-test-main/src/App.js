@@ -1,3 +1,4 @@
+import logo from './logo.svg';
 import React, { useState, useEffect} from 'react'; 
 import './App.css';
 import axios from './helper/axios'
@@ -103,7 +104,8 @@ function App() {
                 <tbody>
                     { usersToDisplay?.data?.map(user => {
                         return <tr key={user.id}>
-                            <td width='280'>
+                            <td width='80'>
+                                <br />
                                 { currentlyEditing.id === user.id ? (
                                     <>
                                         <input type="text" name='first_name' placeholder='first_name' value={user.first_name} onChange={(e) => onEdit(e)} />&nbsp;
@@ -111,10 +113,13 @@ function App() {
                                     </>
                                     ) : (
                                         <>
+                                            <img src={user.avatar} alt="" width='50' />
+                                            <br />
                                             {user.first_name}
                                         </>
                                     )
                                 }
+                                <br />
                             </td>
                             <td>
                                 <button onClick={() => deleteUser(user.id)}>🗑</button>
@@ -134,7 +139,8 @@ function App() {
             <br />
             <br />
             <hr/>
-            <input type="text" name='first_name' placeholder='first_name' onChange={(e) => onAdd(e)} />&nbsp;
+            <input type="text" name='first_name' placeholder='first_name' onChange={(e) => onAdd(e)} />
+            <br />
             <input type="text" name='job' placeholder='job' onChange={(e) => onAdd(e)} />
             <br /><br />
             <button onClick={addUser}>💾 Add user</button>
